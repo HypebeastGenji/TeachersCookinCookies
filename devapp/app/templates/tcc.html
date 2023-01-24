@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b0c6daec2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/tcc.css"/>
+    <title>Teachers Cooking Cookies</title>
+</head>
+<body>
+    <div>
+        <img src=""/>
+    </div>
+    <div id="page" class="page">
+        <div class="btn-menu">
+            <button id="recent-btn">Recent Events</button>
+            <button id="about-btn">About Us</button>
+            <button id="order-btn">Place Order</button>
+        </div>
+        <div id="main">
+
+            <!-- <div id="about">
+                <div class="about">
+                    <div class="img-gallery"> -->
+                        <!-- <img class="about-img" src="../static/img/pfp.jpg"/> -->
+                        <!-- Image Slider - ref: https://codepen.io/gagneow/pen/BoWroQ -->
+                        <!-- <ul class="slides">
+                            <input type="radio" name="radio-btn" id="img-1" checked />
+                            <li class="slide-container">
+                                <div class="slide">
+                                    <img src="../static/img/pfp.jpg" />
+                                </div>
+                              
+                                <div class="nav">
+                                    <label for="img-3" class="prev">&#x2039;</label>
+                                    <label for="img-2" class="next">&#x203a;</label>
+                                </div>
+                            </li>
+                        
+                            <input type="radio" name="radio-btn" id="img-2" />
+                            <li class="slide-container">
+                                <div class="slide">
+                                  <img src="../static/img/GLM.jpg" />
+                                </div>
+                                <div class="nav">
+                                    <label for="img-1" class="prev">&#x2039;</label>
+                                    <label for="img-3" class="next">&#x203a;</label>
+                                </div>
+                            </li>
+                        
+                            <input type="radio" name="radio-btn" id="img-3" />
+                            <li class="slide-container">
+                                <div class="slide">
+                                  <img src="../static/img/GLK.jpg" />
+                                </div>
+                                <div class="nav">
+                                    <label for="img-2" class="prev">&#x2039;</label>
+                                    <label for="img-1" class="next">&#x203a;</label>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-dots">
+                              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                              </li>
+                        </ul> -->
+                        <!-- Image Slider - END -->
+                        
+                    <!-- </div>
+                    <div class="about-info">
+                        <h2>About the Teachers</h2>
+                        <hr class="rounded">
+                        <p>Lorem ipsum dolor sit amet, audire veritus fuisset eu est, menandri incorrupte ut est. Amet argumentum disputando ei ius, ex verear quaeque his, simul inermis pertinax nam no. Vix ne assum facilisi, eum eros bonorum assentior eu, nam eu ludus forensibus. Invidunt moderatius scribentur no vix, duo te error primis. Cu liber aeque populo cum, vis ea principes dignissim.
+    
+                            Facilisi necessitatibus duo ne, ea porro omnium periculis pri, mei ei mollis fabulas erroribus. Sed eros maiestatis ex, vix ea sint veritus nostrum, vis veniam constituto sadipscing ex. Ne pri praesent consetetur. Vero natum laoreet sit ei.</p>
+                            
+                        <p>Vim eu conceptam appellantur, altera nostro et pro. Mei ad propriae electram, sumo paulo facilis nec id. Ius id vide constituam concludaturque, eu possim albucius vim. Ex case scriptorem est, sit equidem inimicus ad. Ex duo sale principes. Ea possim dissentias his.
+                            
+                            An has insolens mandamus, quis saepe vix ea. Autem splendide no has, malis definitionem nec ut. Cu mei graeco habemus, tollit vidisse ut ius. Qui in nibh pericula, has ut omnes primis impetus. Pro tota nostrud vituperata et.</p>
+                            
+                        <p>    Aeterno diceret facilisis an mel, mei cu laoreet accusam consequuntur. Quis omittantur reformidans his ei, porro pericula corrumpit pro ut. Has eu case elit voluptatibus. Veri epicurei scribentur nam ad, te rebum tollit aliquam qui, eu clita veritus gubergren mel.
+                            Aeterno diceret facilisis an mel, mei cu laoreet accusam consequuntur. Quis omittantur reformidans his ei, porro pericula corrumpit pro ut. Has eu case elit voluptatibus. Veri epicurei scribentur nam ad, te rebum tollit aliquam qui, eu clita veritus gubergren mel.
+                            Aeterno diceret facilisis an mel, mei cu laoreet accusam consequuntur. Quis omittantur reformidans his ei, porro pericula corrumpit pro ut. Has eu case elit voluptatibus. Veri epicurei scribentur nam ad, te rebum tollit aliquam qui, eu clita veritus gubergren mel.
+                        </p>
+    
+                    </div>
+
+                </div>
+                
+
+            </div> -->
+
+
+            <div id="orders">
+
+                <a class="logo-img"><img src="../static/img/badge.png"/></a>
+
+                <a href="#order-main" class="order-link">Order Now</a>
+                <a href="#order-main" class="arrow">&#x2304;</a>
+                
+                <div class="order-img"></div>
+                
+
+                <div id="order-main" class="row">
+                    <div id="order-box" class="order-box">
+                        <h1 class="order-title">Order Form</h1>
+                        <hr class="rounded w">
+                        <form id="order-form" action="POST">
+                            <div class="labels row">
+                                <label>Name:</label>
+                                <label>Email:</label>
+                            </div>
+                            <div class="row inputs">
+                                <input type="text" id="customer-name" name="name" placeholder="Name"/>
+                                <input type="text" id="email" name="email" placeholder="Email"/>
+                            </div>
+                            <div class="row labels qty-labels">
+                                <label>Subject:</label>
+                                <label class="qty-label">Quantity:</label>
+                            </div>
+                            
+                           <div class="row inputs">
+                                <input type="text" id="subject" name="subject" placeholder="E.g Kevin's 80th Birthday"/>
+                                <input type="text" id="quantity" name="quantity" placeholder="Qty"/>
+                           </div>
+                           <label>Order Description:</label>
+                           <textarea id="description" name="description" placeholder="Give us a description of your order as well as the message you would like printed on the top"></textarea>
+                            <!-- <label>Quantity:</label>
+                            <input type="text" id="quantity" name="quantity" placeholder="Qty"/>
+                            <label>Order Description:</label>
+                            <textarea id="description" name="description" placeholder="Give us a description of your order as well as the message you would like printed on the top"></textarea> -->
+                        </form>
+                        <div class="submit-menu row">
+                            <button onclick="placeOrder()" class="submit-btn">Send</button>
+                            <button onclick="openMail()" class="submit-btn">Open in Mail</button>
+                        </div>
+                       
+                        
+    
+    
+                    </div>
+                    <hr class="rounded">
+                    <div class="how-to-order">
+                        <h1 class="order-title">How to Order</h1>
+                        <hr class="rounded w">
+                        <p class="order-method-info">Feel free to contact us through any of these methods to order cookies for your event today!</p>
+                        <div class="method-box">
+                            <div class="method row bgw">
+                                <i class="fa fa-wpforms bgw form-icon"></i>
+                                <p>Complete an Order Form</p>
+                            </div>
+                            <div class="method row bgw">
+                                <a class="dl" href="#"><i class="fa fa-instagram bgw form-icon"></i></a>
+                                <p>DM us on Insta</p>
+                            </div>
+                            <div class="method row bgw">
+                                <i class="fa fa-envelope bgw form-icon"></i>
+                                <p>Send us an Email</p>
+                            </div>
+                        </div>
+                        
+                        
+    
+    
+                    </div>
+                    <hr class="rounded">
+
+                    <div id="order-box" class="order-box">
+                        <h1 class="order-title">What to Expect</h1>
+                        <hr class="rounded w">
+                        <div class="expected-info">
+                            <p><span class="info-head">Flavours: </span>Lorem ipsum dolor sit amet, audire veritus fuisset eu est, menandri incorrupte ut est. Amet argumentum disputando ei ius, ex verear quaeque his, simul inermis pertinax nam no.</p>
+    
+                            <p><span class="info-head">Messages: </span> necessitatibus duo ne, ea porro omnium periculis pri, mei ei mollis fabulas erroribus. Sed eros maiestatis ex, vix ea sint veritus nostrum, vis veniam constituto sadipscing ex.</p>
+                            <p><span class="info-head">Pricing: </span> necessitatibus duo ne, ea porro omnium periculis pri, mei ei mollis fabulas erroribus. Sed eros maiestatis ex, vix ea sint veritus nostrum, vis veniam constituto sadipscing ex.</p>
+                                
+                            <p><span class="info-head">Packaging: </span>Vim eu conceptam appellantur, altera nostro et pro. Mei ad propriae electram, sumo paulo facilis nec id. Ius id vide constituam concludaturque, eu possim albucius vim.</p>
+
+                            <div class="img-panel bord">
+                                <img src="../static/img/box.jpg"/>
+                                <img src="../static/img/stack.jpg"/>
+                                <img src="../static/img/KJ.jpg"/>
+
+                            </div>
+                            
+                       
+
+                        </div>
+                        
+                        
+    
+    
+                    </div>
+                    
+    
+                </div>
+
+                </div>
+               
+                
+
+
+
+            <!-- <div id="recent">
+                <div class="feed">
+                    <div class="row">
+                        <div class="event-card">
+                            <h3>21st Birthday</h3>
+                            <hr class="rounded"> -->
+                            <!-- <img src="../static/img/menu.jpg"/>
+                             -->
+                             <!-- <ul class="event-slides">
+                            <input type="radio" name="radio-btn" id="img-1" checked />
+                            <li class="event-slide-container">
+                                <div class="event-slide">
+                                    <img src="../static/img/pfp.jpg" />
+                                </div>
+                              
+                                <div class="nav">
+                                    <label for="img-3" class="prev">&#x2039;</label>
+                                    <label for="img-2" class="next">&#x203a;</label>
+                                </div>
+                            </li>
+                        
+                            <input type="radio" name="radio-btn" id="img-2" />
+                            <li class="event-slide-container">
+                                <div class="event-slide">
+                                  <img src="../static/img/GLM.jpg" />
+                                </div>
+                                <div class="nav">
+                                    <label for="img-1" class="prev">&#x2039;</label>
+                                    <label for="img-3" class="next">&#x203a;</label>
+                                </div>
+                            </li>
+                        
+                            <input type="radio" name="radio-btn" id="img-3" />
+                            <li class="event-slide-container">
+                                <div class=event-slide">
+                                  <img src="../static/img/GLK.jpg" />
+                                </div>
+                                <div class="nav">
+                                    <label for="img-2" class="prev">&#x2039;</label>
+                                    <label for="img-1" class="next">&#x203a;</label>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-dots">
+                              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                              </li>
+                        </ul>
+                            <div class="card-info">
+                                <div class="card-header">
+                                    <h4 id="cookie-name">Floral Roses</h4>
+                                    <h4 id="cookie-num">Qty: 150</h4>
+                                </div>
+                                <hr class="rounded">
+                                
+                                <p>In celebration of Danika's 21st birthday 80 pink fondant cookies stamped with "Happy Birthday and "Twenty-One"</p>
+    
+                            </div>
+    
+                        </div>
+                        <div class="event-card">
+                            <h3>Wedding Event</h3>
+                            <hr class="rounded">
+                            <img src="../static/img/menu.jpg"/>
+                            <div class="card-info">
+                                <div class="card-header">
+                                    <h4 id="cookie-name">Wedding White</h4>
+                                    <h4 id="cookie-num">Qty: 200</h4>
+                                </div>
+                                <hr class="rounded">
+                                
+                                <p>To congratulate the newlyweds 200 circle cookies with white fondant were stamped with thier last name</p>
+    
+                            </div>
+    
+                        </div>
+                        <div class="event-card">
+                            <h3>Good Luck Cookies</h3>
+                            <hr class="rounded">
+                            <img src="../static/img/menu.jpg"/>
+                            <div class="card-info">
+                                <div class="card-header">
+                                    <h4 id="cookie-name">Floral Roses</h4>
+                                    <h4 id="cookie-num">Qty: 150</h4>
+                                </div>
+                                <hr class="rounded">
+                                
+                                <p>In celebration of Danika's 21st birthday 80 pink fondant cookies stamped with "Happy Birthday and "Twenty-One"</p>
+    
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <br/>
+                    
+                    <div class="row">
+                        <div class="event-card">
+                            <h3>21st Birthday</h3>
+                            <hr class="rounded">
+                            <img src="../static/img/menu.jpg"/>
+                            <div class="card-info">
+                                <div class="card-header">
+                                    <h4 id="cookie-name">Floral Roses</h4>
+                                    <h4 id="cookie-num">Qty: 150</h4>
+                                </div>
+                                <hr class="rounded">
+                                
+                                <p>In celebration of Danika's 21st birthday 80 pink fondant cookies stamped with "Happy Birthday and "Twenty-One"</p>
+    
+                            </div>
+    
+                        </div>
+                        <div class="event-card">
+                            <h3>21st Birthday</h3>
+                            <hr class="rounded">
+                            <img src="../static/img/menu.jpg"/>
+                            <div class="card-info">
+                                <div class="card-header">
+                                    <h4 id="cookie-name">Floral Roses</h4>
+                                    <h4 id="cookie-num">Qty: 150</h4>
+                                </div>
+                                <hr class="rounded">
+                                
+                                <p>In celebration of Danika's 21st birthday 80 pink fondant cookies stamped with "Happy Birthday and "Twenty-One"</p>
+    
+                            </div>
+    
+                        </div>
+                        <div class="event-card">
+                            <h3>21st Birthday</h3>
+                            <hr class="rounded">
+                            <img src="../static/img/menu.jpg"/>
+                            <div class="card-info">
+                                <div class="card-header">
+                                    <h4 id="cookie-name">Floral Roses</h4>
+                                    <h4 id="cookie-num">Qty: 150</h4>
+                                </div>
+                                <hr class="rounded">
+                                
+                                <p>In celebration of Danika's 21st birthday 80 pink fondant cookies stamped with "Happy Birthday and "Twenty-One"</p>
+    
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+        </div>
+        <div class="footer">
+            <div>
+                <h4>Follow us for more</h4>
+                <div>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i onclick="openMail()" class="fa fa-envelope"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <p>Copyright &copy; Neurolabs 2023</p>
+    
+        </div>
+    </div>
+    
+
+    <script src="../static/tcc.js"></script>
+    
+</body>
+</html>
